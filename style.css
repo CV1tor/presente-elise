@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(#ad5389, #3c1053);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    margin-top: 5vh;
+}
+
+h1, h2 {
+
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    text-shadow: 10px 10px 10px rgba(66, 8, 83, 0.637);
+    
+}
+
+.cards-display {
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+.card {
+    color: white;
+    width: 300px;
+    height: 500px;
+    padding: 2rem;
+    background-image: radial-gradient(#434343, #353434), url(none);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(66, 8, 83, 0.637);
+    transition: all .25s ease-in;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    background-position: center;
+    
+}
+
+.card p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-20px);
+    filter: brightness(1.25);
+    
+}
+
+.card.active {
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+#first.card.active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.767)), url(img01.jpg);
+    
+
+}
+
+#second.card.active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.767)), url(img02.jpg);
+    
+}
+
+#third.card.active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.767)), url(img03.jpg);
+}
+
+
+
+#fourth.card.active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.767)), url(img04.jpg);
+}
+
+#fifth.card.active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.767)), url(img05.jpg);
+}
+
+
+
+footer {
+    color: white;
+   
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+
